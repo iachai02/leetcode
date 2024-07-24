@@ -25,5 +25,16 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
         # adds the value with the index to the hashmap
         prevMap[n] = i 
 ```
-Time: `O(n)`
-Space: `O(n)`
+- Time: `O(n)`
+- Space: `O(n)`
+
+## Example
+
+1. `nums = [2, 7, 11, 15]`, `target = 9`
+2. `prevMap` is empty
+3. goes through each value and index in nums
+4. `diff = 9 - 2`
+5. `7` is not in the `prevMap`, so add `prevMap[2] = 0`
+6. `diff = 9 - 7`
+7. `2` is in the `prevMap`
+8. return `[0, 1]`

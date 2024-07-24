@@ -32,13 +32,13 @@ def topKFrequent(self, nums: List[int], k: int) -> List[int]:
 - Time: `O(n)`
 - Space: `O(n)`
 
-# Example
+## Example
 
 1. `nums = [1, 1, 1, 2, 2, 3]`, `k = 2`
 2. `count`: `{1: 3, 2: 2, 3: 1}`
 3. `freq`: `[[], [3], [2], [1], [], [], ...]`
 4. Iterate over `freq` in reverse
-    a. `i = 3`: `freq[3]` is `[1]`, add `1` to `res`
-    b. `i = 2`: `freq[2]` is `[2]`, add `2` to `res`
+- `i = 3`: `freq[3]` is `[1]`, add `1` to `res`
+- `i = 2`: `freq[2]` is `[2]`, add `2` to `res`
 5. Now, `res` has `2` elements and `k = 2`, so return `res`
 6. returned: `[1, 2]`

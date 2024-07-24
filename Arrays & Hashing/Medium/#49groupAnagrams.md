@@ -26,5 +26,5 @@ def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
     # returns the string values of the dictionary
     return res.values()
 ```
-Time: `O(m*n)` where `m` is the length of the list of strings and `n` is the average length of each string in the list of strings
-Space: `O(m*n)`
+- Time: `O(m*n)` where `m` is the length of the list of strings and `n` is the average length of each string in the list of strings
+- Space: `O(m*n)`

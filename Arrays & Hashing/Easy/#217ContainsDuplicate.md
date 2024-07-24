@@ -22,3 +22,13 @@ def containsDuplicate(self, nums: List[int]) -> bool:
 ```
 - Time: `O(n)`
 - Space: `O(n)`
+
+## Example
+
+1. `nums = [1, 2, 3, 1]`
+2. hashset has nothing in it
+3. `1` is not in hashset, add `1` to hashset
+4. `2` is not in hashset, add `2` to hashset
+5. `3` is not in hashset, add `3` to hashset
+6. `1` is in hashset
+7. return `True`

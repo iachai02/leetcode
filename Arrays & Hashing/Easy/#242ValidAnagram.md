@@ -34,3 +34,13 @@ def isAnagram(self, s: str, t: str) -> bool:
 ```
 - Time: `O(nlogn)`
 - Space: `O(n)`
+
+## Example
+
+1. `s = "anagram"`, `t = "nagaram"`
+2. `7` = `7`
+3. `countS` and `countT` are both empty
+4. `countS['a'] = 1 + 0`, `countT['n'] = 1 + 0`
+5. After going through the entire string: `countS = {'a': 2, 'n': 1, 'g': 1, 'r': 1, 'm': }`, `countT = {'a': 2, 'n': 1, 'g': 1, 'r': 1, 'm': }`
+6. countS == countT
+7. return `True`

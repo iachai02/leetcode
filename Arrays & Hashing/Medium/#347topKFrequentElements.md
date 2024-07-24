@@ -29,8 +29,8 @@ def topKFrequent(self, nums: List[int], k: int) -> List[int]:
             if len(res) == k:
                 return res
 ```
-Time: `O(n)`
-Space: `O(n)`
+- Time: `O(n)`
+- Space: `O(n)`
 
 # Example
 

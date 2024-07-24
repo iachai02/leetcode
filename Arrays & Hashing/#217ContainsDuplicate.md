@@ -2,8 +2,8 @@
 
 Given an integer array "nums", return true if any value appears at least twice in the array, and return false if every element is distinct.
 - Brute force: start with the first number and compare every number with a different number in the array to see if any are equal.
-    - Complexity: `O($n^2$)`
-    - Space: O(1)
+    - Complexity: `O(n^2^)`
+    - Space: `O(1)`
 
 ```python
 def containsDuplicate(self, nums: List[int]) -> bool:
@@ -20,5 +20,5 @@ def containsDuplicate(self, nums: List[int]) -> bool:
         hashset.add(n)
     return False
 ```
-- Time: O(n)
-- Space: O(n)
+- Time: `O(n)`
+- Space: `O(n)`

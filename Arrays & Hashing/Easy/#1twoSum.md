@@ -25,3 +25,5 @@ def twoSum(self, nums: List[int], target: int) -> List[int]:
         # adds the value with the index to the hashmap
         prevMap[n] = i 
 ```
+Time: `O(n)`
+Space: `O(n)`

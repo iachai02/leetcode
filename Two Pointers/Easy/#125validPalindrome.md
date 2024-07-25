@@ -16,8 +16,8 @@ def isPalindrome(self, s: str) -> bool:
     # checks if the new string and new string backwards are equal
     return newStr == newStr[::-1]
 ```
-Time: `O(n^2)`
-Space: `O(n)`
+- Time: `O(n^2)`
+- Space: `O(n)`
 
 ## Two pointer solution
 ```python
@@ -49,6 +49,8 @@ def alphaNum(self, c):
             ord('a') <= ord(c) <= ord('z') or
             ord('0') <= ord(c) <= ord('9'))
 ```
+- Time: `O(n)`
+- Space: `O(1)`
 
 ## Example
 

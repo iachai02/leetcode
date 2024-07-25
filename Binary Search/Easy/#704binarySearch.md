@@ -27,8 +27,8 @@ def search(self, nums: List[int], target: int) -> int:
             return m
     return -1
 ```
-Time: `O(logn)` -> because we are constantly finding the mid point which means we are dividing by 2 every time
-Space: `O(1)`
+- Time: `O(logn)` -> because we are constantly finding the mid point which means we are dividing by 2 every time
+- Space: `O(1)`
 
 ## Example
 

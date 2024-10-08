@@ -3,6 +3,7 @@
 A phrase is a palindrome if, after converting all uppercase letters into lowercase letters and removing all non-alphasnumeric characters, it reads the same forward and backward. Alphanumeric characters include letters and numbers. Given a string `s`, return `true` if it is a palindrome, or `false` otherwise
 
 ## "Cheating" solution (uses built-in python features)
+
 ```python
 def isPalindrome(self, s: str) -> bool:
     # new string
@@ -16,10 +17,12 @@ def isPalindrome(self, s: str) -> bool:
     # checks if the new string and new string backwards are equal
     return newStr == newStr[::-1]
 ```
+
 - Time: `O(n^2)`
 - Space: `O(n)`
 
 ## Two pointer solution
+
 ```python
 def isPalindrome(self, s: str) -> bool:
     # set a left pointer to 0 and a right pointer to the end of the string
@@ -49,6 +52,7 @@ def alphaNum(self, c):
             ord('a') <= ord(c) <= ord('z') or
             ord('0') <= ord(c) <= ord('9'))
 ```
+
 - Time: `O(n)`
 - Space: `O(1)`
 

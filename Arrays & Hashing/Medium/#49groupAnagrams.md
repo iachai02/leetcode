@@ -5,6 +5,8 @@ Given an array of strings `strs`, group the anagrams together. You can return th
 - Sorting: we can try sorting everything in the list of strings given, but the time complexity would be `O(m*nlogn)`
 - Hashmap: we know that there are only lowercased letters involved so that means there are only 26 letters being used. We can count the occurences of each letter as the key for our hashmap and the list of anagrams as the value
 
+## Solution
+
 ```python
 def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
     res = defaultdict(list)
@@ -29,4 +31,22 @@ def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
 ```
 
 - Time: `O(m*n)` where `m` is the length of the list of strings and `n` is the average length of each string in the list of strings
+- Space: `O(m*n)`
+
+## Solution 2
+
+```python
+def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+    res = defaultdict(list)
+
+    # go through each string in the list of strings
+    for str in strs:
+        # sort the word and add the sorted word as the key to the dictionary and assign it to the actual string
+        sorted_word = ''.join(sorted(str))
+        res[sorted_word].append(str)
+
+    return list(res.values())
+```
+
+- Time: `O(m*nlogn)` where `m` is the number of strings and `n` is the average length of the strings
 - Space: `O(m*n)`

@@ -50,3 +50,13 @@ def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
 
 - Time: `O(m*nlogn)` where `m` is the number of strings and `n` is the average length of the strings
 - Space: `O(m*n)`
+
+## Questions to ask the interviewer
+
+- Can this input array `strs` contain empty strings?
+- Can `strs` contain duplicates, or will all strings be unique?
+  - should they be grouped together or handled separately
+- What is the expected behavior if all strings are the same?
+- How should we handle single-character strings?
+- What should be the output if the input array is empty?
+- Can I assume that the input will always consist of lowercase english letters only?

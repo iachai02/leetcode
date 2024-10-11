@@ -57,3 +57,8 @@ def isValidSudoku(self, board: List[List[str]]) -> bool:
 7. Skip the `.`
 8. `rows[0]` has a `5` already in the set, so
 9. return `False`
+
+## Questions to ask the interviewer
+
+- Should we handle edge cases such as a completely empty board or a board with minimal entries?
+- Howw should we handle scenarios where numbers other than 1-9 appear on the board? Should we consider those cases invalid, or should such entries be ignored?

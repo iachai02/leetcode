@@ -27,3 +27,4 @@ def wordBreak(self, s: str, wordDict: List[str]):
 
 - Time: `O(n*m*k)`, where n is the length of the string s, m is the number of words in wordDict, and k is the average length of a word in wordDict (substring comparison)
 - Space: `O(n*m*k)`
+-

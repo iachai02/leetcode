@@ -1,6 +1,7 @@
 # 20. Valid Parenthesis
 
 Given a string s containing just the characters `(`, `)`, `{`, `}`, `[`, `]`, determine if the input string is valid. An input string is valid if:
+
 1. Open brackets must be closed by the same type of brackets
 2. Open brackets must be closed in the correct order
 
@@ -27,6 +28,7 @@ def isValid(self, s: str) -> bool:
         # returns true if the stack is empty
         return not stack
 ```
+
 - Time: `O(n)`
 - Space: `O(n)`
 
@@ -36,7 +38,9 @@ def isValid(self, s: str) -> bool:
 2. Iterate through each letter in string `s`
 3. `(` is not in `Map`, so `stack.append('(')`
 4. `)` is in `Map`
+
 - stack is not empty and the last element in stack `(` is in `Map[c]`
 - pop out `(`, stack is empty
+
 5. Do the same for the other characters
 6. return `True` because stack is empty
